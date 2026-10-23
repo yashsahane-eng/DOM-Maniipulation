@@ -1,0 +1,75 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 3%;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 400;
+}
+
+.count-text {
+    margin: 0;
+    font-size: 16px;
+}
+
+#count {
+    font-weight: bold;
+}
+
+hr {
+    width: 235px;
+    margin: 12px 0 28px;
+    border: 0;
+    border-top: 2px solid #ccc;
+}
+
+#error {
+    margin: 0 0 28px;
+    color: red;
+}
+
+#error.hidden {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    min-width: 120px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:focus-visible {
+    outline: 2px solid #65c9f2;
+    outline-offset: 3px;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+[hidden] {
+    display: none !important;
+}

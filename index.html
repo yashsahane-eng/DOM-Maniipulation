@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter using HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Counter using HTML</h1>
+
+        <p class="count-text">
+            Your current count is : <span id="count">0</span>
+        </p>
+
+        <hr>
+
+        <p id="error" role="alert" aria-live="polite">
+            Error : Cannot go below 0
+        </p>
+
+        <div class="buttons">
+            <button id="decrement" type="button">Decrement</button>
+            <button id="increment" type="button">Increment</button>
+            <button id="clear" type="button" hidden>Clear</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
